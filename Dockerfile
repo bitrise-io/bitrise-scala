@@ -1,4 +1,4 @@
-from bitriseio/android-ndk:v2019_03_23-08_30-b1426
+from bitriseio/android-ndk:v2019_04_13-08_13-b1451
 
 RUN apt-get update && \
  wget www.scala-lang.org/files/archive/scala-2.11.8.deb && \
