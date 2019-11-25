@@ -9,8 +9,8 @@ RUN apt-get update && \
  curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
  apt-get update && \
  apt-get install -y --no-install-recommends sbt openjdk-11-jdk google-cloud-sdk && \
- wget www.scala-lang.org/files/archive/scala-2.11.8.deb && \
- dpkg -i scala-2.11.8.deb && \
+ wget www.scala-lang.org/files/archive/scala-2.12.10.deb && \
+ dpkg -i scala-2.12.10.deb && \
  rm *.deb && \
  apt-get clean
 
