@@ -8,7 +8,7 @@ RUN apt-get update && \
  echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list && \
  curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
  apt-get update && \
- apt-get install -y --no-install-recommends sbt openjdk-11-jdk google-cloud-sdk && \
+ apt-get install -y --fix-missing --no-install-recommends sbt openjdk-13-jdk google-cloud-sdk && \
  wget www.scala-lang.org/files/archive/scala-2.13.1.deb && \
  dpkg -i scala-2.13.1.deb && \
  rm *.deb && \
